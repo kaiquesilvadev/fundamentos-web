@@ -37,7 +37,8 @@ body{
 main{
     width: 80vw;
     margin: 0 auto;
-    padding-top: 80px;
+    padding-top: 90px;
+    
 }
 
 p{
@@ -94,6 +95,7 @@ header {
     position: fixed;
     width: 100%;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: #FFFFFF ;
 }
 
 nav{
@@ -103,7 +105,6 @@ nav{
     width: 100;
     display: flex;
     justify-content: space-between;
-    background-color: #FFFFFF ;
     font-size: 1.5rem;
    
 }
@@ -135,12 +136,16 @@ ul {
 }
 
 #sobre{
+    margin-bottom: 15px;
+    float: right;
     display: flex;
     align-items: center;
     padding-right: 1.5rem;
     background-color: var(--background-sobre);
     border-radius: 1rem;
-    text-align: justify;   
+    text-align: justify; 
+    max-width: 700px ;  
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     
 }
 
@@ -148,10 +153,51 @@ ul {
     margin: 1.75rem;
 }
 
+.apresentacao{
+    display: inline-block;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+    border-radius: 1rem;
+}
+
+.imagens-sobre{
+    max-width: 100%;
+    justify-content: center;
+}
+
 .foto {
     width: 230px;
     border-radius: 20px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 7.9);
+}
+
+.apresentacao-sobre{
+    display: inline-block;
+
+}
+
+.apresentacao .apresentacao-sobre h2{
+    margin-top: 15px;
+}
+
+#video {
+    display: flex;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 7.9);
+    border-radius: 20px;
+    max-width: 500px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    margin: 15px 15px 15px 0;
+}
+
+.video h3{
+    width:20px ;
+}
+
+.meu-video{
+    max-width: 90%; 
 }
 
 footer {

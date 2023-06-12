@@ -29,14 +29,14 @@
                     <div class="campos-form">
                         <label for="nome">Nome:</label>
                         <input id="nome" name="nome" type="text"
-                            placeholder="Insira o seu nome completo">
-                        <div id="txtNome"></div>
+                            placeholder="Insira o seu nome completo" onkeyup="validaNome()">
+                            <div id="textName"></div>
                     </div>
 
                     <div class="campos-form">
                         <label for="email">E-mail:</label>
                         <input id="email" name="email" type="text"
-                            placeholder="Insira o seu e-mail">
+                            placeholder="Insira o seu e-mail" onkeyup="validaEmail()">
                         <div id="txtEmail"></div>
                     </div>
 
@@ -61,7 +61,7 @@
                 <div class="campos-form">
                     <label for="cep">CEP:</label>
                     <input id="cep" name="cep" type="text"
-                        placeholder="Digite o número do CEP">
+                        placeholder="Digite o número do CEP" >
                     <div id="txtCep"></div>
                 </div>
                 <button type="button" onclick="consultarCep()">
@@ -86,12 +86,10 @@
             <a href="https://github.com/kaiquesilvadev">
                 <img class="icons" src="assets/img/github-removebg-preview.png" alt="github">
             </a>
-            <a href="http://instagram.com">
-                <img class="icons" src="assets/images/instagram.png" alt="instagram">
-            </a>
         </div>
         <p class="by">Desenvolvido por kaique - 2023 &copy;</p>
     </footer>
  
+    <script src="assets/js/scritp.js"></script>
 </body>
 </html>
