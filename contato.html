@@ -8,7 +8,20 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <div class="logo">
+                <div class="img-logo"><img src="assets/img/Texto do seu parágrafo.png" alt="">
+                </div>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Video</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
     <main id="contato">
         <section id="formulario_mensagem">
             <h3>Contato</h2>
@@ -16,14 +29,14 @@
                     <div class="campos-form">
                         <label for="nome">Nome:</label>
                         <input id="nome" name="nome" type="text"
-                            placeholder="Insira o seu nome completo">
-                        <div id="txtNome"></div>
+                            placeholder="Insira o seu nome completo" onkeyup="validaNome()">
+                            <div id="textName"></div>
                     </div>
 
                     <div class="campos-form">
                         <label for="email">E-mail:</label>
                         <input id="email" name="email" type="text"
-                            placeholder="Insira o seu e-mail">
+                            placeholder="Insira o seu e-mail" onkeyup="validaEmail()">
                         <div id="txtEmail"></div>
                     </div>
 
@@ -48,7 +61,7 @@
                 <div class="campos-form">
                     <label for="cep">CEP:</label>
                     <input id="cep" name="cep" type="text"
-                        placeholder="Digite o número do CEP">
+                        placeholder="Digite o número do CEP" >
                     <div id="txtCep"></div>
                 </div>
                 <button type="button" onclick="consultarCep()">
@@ -67,19 +80,16 @@
 
     <footer>
         <div class="redes_sociais">
-            <a href="http://linkedin.com" target="_blank">
-                <img class="icons" src="assets/images/linkedin.png" alt="Linkedin">
+            <a href="https://www.linkedin.com/in/joaokaique/" target="_blank">
+                <img class="icons" src="assets/img/linkedin-removebg-preview.png" alt="Linkedin">
             </a>
-            <a href="http://github.com">
-                <img class="icons" src="assets/images/github.png" alt="github">
-            </a>
-            <a href="http://instagram.com">
-                <img class="icons" src="assets/images/instagram.png" alt="instagram">
+            <a href="https://github.com/kaiquesilvadev">
+                <img class="icons" src="assets/img/github-removebg-preview.png" alt="github">
             </a>
         </div>
         <p class="by">Desenvolvido por kaique - 2023 &copy;</p>
     </footer>
-   
-
+ 
+    <script src="assets/js/scritp.js"></script>
 </body>
 </html>
